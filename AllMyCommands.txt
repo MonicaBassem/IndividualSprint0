@@ -1,0 +1,22 @@
+
+git init
+git add .
+git status
+rm -rf file2.txt
+git status
+git checkout file2.txt
+git commit -m "Delete file2 then restoring it"
+git remote add origin https://github.com/MonicaBassem/IndividualSprint0.git
+git push -u origin master
+git checkout -b ReadMe
+git add README.md
+git status
+git commit -m "Created New branch ReadMe and added README file"
+git push -u origin ReadMe
+git checkout master
+git merge ReadMe
+git add AllMyCommands.txt
+git commit -m "merging ReadMe branch to master branch
+and added AllMyCommands file"
+git push -u origin master
+
